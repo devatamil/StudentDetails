@@ -1,0 +1,37 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,117,1) 35%, rgba(0,212,255,1) 100%);
+    color: azure;
+}
+form{
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 300px;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    align-items: center;
+    }
+    .details
+    {
+        padding: 10px;
+    }
+td
+{
+    color: azure;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    padding: 5px;
+    margin-right: 10px;
+}

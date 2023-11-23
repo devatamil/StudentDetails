@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="studentDetailsFormContainer">
+        <form id="studentDetailsForm">
+            <table cellpadding="8" width="40%" bgcolor="" align="center" cellspacing="10">
+                <tr>
+                    <td colspan=2>
+                        <center>
+                            <font size=4><b style="color: white;">Student Registration Form</b></font>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="9">
+                        <hr width="100%" color="yellow">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="studentName">Student Name:</label></td>
+                    <td><input type="text" id="studentName" name="studentName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td><input type="text" id="phone" name="phone" oninput="validatePhoneNumber()" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td> <label for="percentage">Percentage Obtained:</label></td>
+                    <td> <input type="number" id="percentage" name="percentage" step="0.01" required></td>
+                </tr>
+                <tr>
+                    <!-- New Decision Box Field - Top Class -->
+                    <td><label for="topClass">Top Class:</label></td>
+                    <td><input type="checkbox" id="topClass" name="topClass" value="false" checked></td>
+                </tr>
+                <tr>
+                    <td> <button type="button" onclick="submitForm()">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+        <div id="submissionResult" class="details"></div>
+    </div>
+    <div id="studentDetailsReportContainer" class="details"></div>
+
+    <script src="studentDetailsPage.js"></script>
+</body>
+
+</html>
